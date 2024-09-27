@@ -21,4 +21,10 @@ Route::get('/funcionario', [FuncionarioController::class, 'index']);
 Route::get('/categoria', [CategoriaController::class, 'index'])->name('categoria.index');
 
 
+Route::get('/categoria/create' , [CategoriaController::class, 'create'])->nome('categoria.create');
+
+
+Route::post('/categoria' , [CategoriaController::class, 'store'])->name('categoria.store');
+
+
 Route::('/categoria/(id)', [CategoriaController::class, 'show'])->name('categoria.show');
