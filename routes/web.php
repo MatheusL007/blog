@@ -17,6 +17,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/funcionario', [FuncionarioController::class, 'index']);
 
 
-// funcionario
+// categoria
 Route::get('/categoria', [CategoriaController::class, 'index'])->name('categoria.index');
 
+
+Route::('/categoria/(id)', [CategoriaController::class, 'show'])->name('categoria.show');

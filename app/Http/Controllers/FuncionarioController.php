@@ -16,7 +16,7 @@ class FuncionarioController extends Controller
       //                where->('name', 'like', '%a%')
        //               orderBy('name', 'DESC')->get();
 
-            $funcionarios = Funcionario::all();
+            $funcionarios = Funcionario::orderBy('nome' , 'DESC')->get();
              dd($funcionarios);
              dd(" correu tudo bem");
     }
