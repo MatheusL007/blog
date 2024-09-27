@@ -18,5 +18,5 @@ Route::get('/funcionario', [FuncionarioController::class, 'index']);
 
 
 // funcionario
-Route::get('/categorua', [CategoriaController::class, 'index']);
+Route::get('/categoria', [CategoriaController::class, 'index'])->name('categoria.index');
 

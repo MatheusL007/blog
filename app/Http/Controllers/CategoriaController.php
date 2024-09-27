@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Model\Categoria;
 
 class CategoriaController extends Controller
 {
@@ -12,6 +13,9 @@ class CategoriaController extends Controller
      */
     public function index()
     {
+        $categorias = Categoria::orderBy('nome' , 'ASC')->get();
+        return view('categoria.categoria_index');
+
         dd('CATEGORIA - INDEX')
     }
 
