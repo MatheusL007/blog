@@ -19,7 +19,9 @@
                     <tr>
                         <td>{{$value->id}}</td>
                         <td>{{$value->nome}}</td>
-                        <td></td>
+                        <td>
+                            <a href="{{ url("/") }}" class="btn btn-p[rimary btn-lg active" role="button" aria-pressed="true">Visualizar</a>
+                        </td>
                     </tr>
               @endforeach
 
